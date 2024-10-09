@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pesquisar Clima</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Buscar Previsão do Tempo</h1>
+    <form action="{% url 'resultado_previsao' %}" method="GET">
+        <div class="form-group">
+            <label for="localidade">Digite a cidade:</label>
+            <input type="text" class="form-control" id="localidade" name="localidade" placeholder="Ex: São Paulo, Brasil">
+        </div>
+        <button type="submit" class="btn btn-primary">Pesquisar</button>
+    </form>
+</div>
+</body>
+</html>
